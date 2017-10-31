@@ -1,0 +1,42 @@
+/* _header.scss
+/* x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x */
+/* x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x */
+/* x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x */
+@import "_config";
+
+
+header {
+  background-color: $cherry;
+  position: relative;
+
+  &::before,
+  &::after {
+    background: rgba(black, 0.1);
+    content: "";
+    display: block;
+    height: 4vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+
+  & > * {
+    height: 70vh;
+  }
+  .copy {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .title {
+    color: $eggshell;
+    font-size: 6.2rem;
+  }
+}

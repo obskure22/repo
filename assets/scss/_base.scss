@@ -1,0 +1,35 @@
+/* _base.scss
+/* x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x */
+/* x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x */
+/* x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x */
+@import "_config";
+
+
+html {
+  background: $eggshell;
+  font-family: "Saira Semi Condensed", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: $blackolive;
+}
+
+/* Wrappers
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+[class*="wrap"] {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $wrap;
+  position: relative;
+
+  &[class*="-wide"] {
+    max-width: $wrap-wide;
+  }
+  &[class*="-narrow"] {
+    max-width: $wrap-narrow;
+  }
+}
+
+
+
+p {
+  font-size: 1.6rem;
+}
